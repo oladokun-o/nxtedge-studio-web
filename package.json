@@ -1,0 +1,29 @@
+{
+  "name": "nxtedge-studio-web",
+  "version": "1.0.0",
+  "description": "NxtEdge Studio - Remote-first digital solutions agency website with Vercel Web Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "validate": "echo \"Validating HTML files...\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oladokun-o/nxtedge-studio-web.git"
+  },
+  "keywords": [
+    "vercel",
+    "analytics",
+    "web-analytics",
+    "static-site"
+  ],
+  "author": "Oladokun Oladipupo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oladokun-o/nxtedge-studio-web/issues"
+  },
+  "homepage": "https://github.com/oladokun-o/nxtedge-studio-web#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
