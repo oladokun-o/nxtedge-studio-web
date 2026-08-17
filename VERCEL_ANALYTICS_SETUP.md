@@ -4,7 +4,7 @@ This document describes the Vercel Web Analytics configuration for the NxtEdge S
 
 ## Installation Summary
 
-Vercel Web Analytics has been successfully installed and configured for this static HTML website.
+Vercel Web Analytics has been successfully installed and configured for this static HTML website following the [official Vercel documentation](https://vercel.com/docs/analytics/quickstart).
 
 ### What Was Added
 
@@ -13,7 +13,7 @@ Vercel Web Analytics has been successfully installed and configured for this sta
    - Installed via npm
 
 2. **Analytics Script**:
-   - Created `common/js/analytics.js` - initializes the Vercel Analytics queue
+   - Created `common/js/analytics.js` - loads the official Vercel Analytics CDN script
    - Added script reference to all HTML pages:
      - `index.html`
      - `about.html`
@@ -23,15 +23,20 @@ Vercel Web Analytics has been successfully installed and configured for this sta
 
 ### How It Works
 
-For static HTML sites, Vercel Web Analytics works in two parts:
+For static HTML sites, Vercel Web Analytics uses the **CDN Script Method**:
 
 1. **Queue Initialization** (`common/js/analytics.js`):
    - Sets up the `window.va` function to queue analytics events
    - This allows page views and custom events to be tracked
 
-2. **Vercel Platform Integration**:
-   - When deployed to Vercel, the platform automatically injects the full analytics script
-   - The script processes the queued events and sends them to Vercel's analytics service
+2. **CDN Script Loading**:
+   - Dynamically loads the official Vercel Analytics script from `https://cdn.vercel-insights.com/v1/script.js`
+   - The script is loaded with `defer` attribute for optimal performance
+   - Works both in development and production environments
+
+3. **Automatic Page View Tracking**:
+   - Once loaded, the script automatically tracks page views and navigation
+   - No additional configuration needed for basic analytics
 
 ### Enabling Analytics on Vercel
 
@@ -61,8 +66,9 @@ To activate analytics for this project:
 
 ### Development vs Production
 
-- **Development**: Analytics are disabled in local development to avoid polluting production data
-- **Production**: Analytics are automatically enabled when deployed to Vercel
+- **Development**: Analytics script loads from CDN in local development (data is collected when the project is deployed)
+- **Production**: Analytics are fully enabled and data is sent to Vercel's analytics service when deployed to Vercel
+- **CDN Method**: The CDN script (`https://cdn.vercel-insights.com/v1/script.js`) works in both environments
 
 ### Custom Event Tracking (Optional)
 
