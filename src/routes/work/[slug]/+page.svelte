@@ -19,7 +19,7 @@
   let relatedSolutions = $derived(solutionDetails.filter((s) => caseStudy.relatedSolutionSlugs.includes(s.slug)));
 </script>
 
-<SEO title="{caseStudy.title} — Nxtedge Studio" description={caseStudy.summary} />
+<SEO title="{caseStudy.title} | Nxtedge Studio" description={caseStudy.summary} />
 
 <PageHeader eyebrow={caseStudy.industry} title={caseStudy.title} description={caseStudy.summary}>
   {#snippet breadcrumbs()}
@@ -72,6 +72,6 @@
 <CTA
   eyebrow="Get Started"
   title="Want results like this?"
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

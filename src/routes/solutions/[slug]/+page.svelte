@@ -24,7 +24,7 @@
   let relatedProducts = $derived(solution.relatedProductSlugs.includes(flagshipProduct.slug) ? [flagshipProduct] : []);
 </script>
 
-<SEO title="{solution.title} — Nxtedge Studio" description={solution.summary} />
+<SEO title="{solution.title} | Nxtedge Studio" description={solution.summary} />
 
 <PageHeader eyebrow="Solutions" title={solution.title} description={solution.summary}>
   {#snippet breadcrumbs()}
@@ -108,6 +108,6 @@
 <CTA
   eyebrow="Get Started"
   title="Ready to start your {solution.title} project?"
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: solution.cta.label, href: solution.cta.href }}
 />

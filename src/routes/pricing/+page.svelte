@@ -14,7 +14,7 @@
 </script>
 
 <SEO
-  title="Pricing — Nxtedge Studio"
+  title="Pricing | Nxtedge Studio"
   description="Product pricing for Nxtflo and Nxtpay, and how we price client services and solutions."
 />
 
@@ -67,6 +67,6 @@
 <CTA
   eyebrow="Get Started"
   title="Not sure what this costs?"
-  description="Tell us what you're trying to solve — we'll come back with a clear, itemized proposal."
+  description="Tell us what you're trying to solve. We'll come back with a clear, itemized proposal."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

@@ -16,7 +16,7 @@ export const productDetails: ProductSummary[] = [
     tagline: 'The operating system for client delivery.',
     status: 'coming-soon',
     description:
-      "Nxtflo is Nxtedge Studio's AI-powered operating system — it takes a raw client idea, structures it, scopes it, costs it, and guides the team through delivery. We're building it in-house first, then bringing it to other studios and freelancers.",
+      "Nxtflo is Nxtedge Studio's AI-powered operating system. It takes a raw client idea, structures it, scopes it, costs it, and guides the team through delivery. We're building it in-house first, then bringing it to other studios and freelancers.",
     features: [
       {
         title: 'Intake & Structuring',

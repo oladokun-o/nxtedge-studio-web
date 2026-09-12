@@ -91,6 +91,7 @@
             >Accredited by</span
           >
           <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <!-- svelte-ignore a11y_invalid_attribute -->
             <a href="#" aria-label="Clutch" class="block">
               <svg
                 class="h-4 w-auto"
@@ -159,7 +160,7 @@
 
         <div
           use:scrollReveal={{ delay: 0.3 }}
-          class="absolute -bottom-6 -left-6 flex items-center gap-6 rounded-xl border border-border bg-primary px-6 py-4 text-white shadow-lg"
+          class="absolute -bottom-3 -right-6 flex items-center gap-6 rounded-xl border border-border bg-primary px-6 py-4 text-white shadow-lg"
         >
           {#each stats as stat (stat.label)}
             <div>
@@ -193,6 +194,7 @@
       <div class="min-w-0 flex-1">
         <LogoMarquee>
           {#each [...placeholderClients, ...placeholderClients] as client, i (i)}
+            <!-- svelte-ignore a11y_invalid_attribute -->
             <a
               href="#"
               class="mr-10 shrink-0 font-display text-lg font-medium whitespace-nowrap text-foreground/40 transition-colors hover:text-foreground/70"

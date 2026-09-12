@@ -9,8 +9,8 @@
 </script>
 
 <SEO
-  title="Products — Nxtedge Studio"
-  description="Nxtflo and the products Nxtedge Studio builds and owns — starting in-house, then made available beyond Nxtedge Studio."
+  title="Products | Nxtedge Studio"
+  description="Nxtflo and the products Nxtedge Studio builds and owns, starting in-house, then made available beyond Nxtedge Studio."
 />
 
 <PageHeader
@@ -28,6 +28,6 @@
 <CTA
   eyebrow="Get Started"
   title="Curious about Nxtflo?"
-  description="We're building it in-house first — tell us what you'd want out of it."
+  description="We're building it in-house first. Tell us what you'd want out of it."
   primaryCta={{ label: 'Learn about Nxtflo', href: '/products/nxtflo' }}
 />

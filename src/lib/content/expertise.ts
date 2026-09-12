@@ -16,7 +16,7 @@ export const expertiseDetails: ExpertiseDetail[] = [
     summary: 'Getting a first working version of a product into real hands, fast.',
     icon: 'sparkles',
     overview:
-      "We build first versions of products meant to be used and learned from, not polished-forever prototypes. Nxtflo itself started this way — an internal MVP, stress-tested on real Nxtedge client work before anything else.",
+      "We build first versions of products meant to be used and learned from, not polished-forever prototypes. Nxtflo itself started this way: an internal MVP, stress-tested on real Nxtedge client work before anything else.",
     relatedSolutionSlugs: ['web-development', 'mobile-applications', 'ai-solutions']
   },
   {
@@ -34,7 +34,7 @@ export const expertiseDetails: ExpertiseDetail[] = [
     summary: 'Structuring, summarizing, and classifying information with AI, built into real systems.',
     icon: 'sparkles',
     overview:
-      'AI earns its place when it removes real manual work — structuring a brief, summarizing a thread, classifying a record — built into a workflow someone already uses, not bolted on as a chatbot. This is the same discipline behind Nxtflo.',
+      'AI earns its place when it removes real manual work like structuring a brief, summarizing a thread, or classifying a record, built into a workflow someone already uses, not bolted on as a chatbot. This is the same discipline behind Nxtflo.',
     relatedSolutionSlugs: ['ai-solutions', 'business-systems']
   },
   {
@@ -43,7 +43,7 @@ export const expertiseDetails: ExpertiseDetail[] = [
     summary: 'Replacing manual, spreadsheet-driven processes with structured software.',
     icon: 'shield',
     overview:
-      "Most operational bottlenecks are a missing-system problem, not a people problem. We modernize the processes a business already runs — sales, inventory, approvals, documentation — into structured, reliable software built around how the business actually works.",
+      "Most operational bottlenecks are a missing-system problem, not a people problem. We modernize the processes a business already runs, such as sales, inventory, approvals, and documentation, into structured, reliable software built around how the business actually works.",
     relatedSolutionSlugs: ['business-systems']
   },
   {

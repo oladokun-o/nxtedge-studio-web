@@ -10,14 +10,14 @@
 </script>
 
 <SEO
-  title="Work — Nxtedge Studio"
-  description="Systems we've delivered for clients — sales tracking, microcredit, loan documentation, and corporate websites."
+  title="Work | Nxtedge Studio"
+  description="Systems we've delivered for clients: sales tracking, microcredit, loan documentation, and corporate websites."
 />
 
 <PageHeader
   eyebrow="Work"
   title="Systems we've delivered"
-  description="A sample of what we've built for clients — full names and results go live as each client signs off on public case studies."
+  description="A sample of what we've built for clients. Full names and results go live as each client signs off on public case studies."
 />
 
 <Section bg="background">
@@ -37,6 +37,6 @@
 <CTA
   eyebrow="Get Started"
   title="Want results like this?"
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

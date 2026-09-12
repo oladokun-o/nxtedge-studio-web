@@ -17,10 +17,10 @@ export const solutionDetails: SolutionDetail[] = [
     summary: 'Custom web applications and business platforms, built for how your business actually works.',
     icon: 'code',
     overview:
-      "Most business websites are brochures — they describe the business but don't do any of the work. We build the other kind: web applications and platforms that are part of how your business actually runs, from customer-facing sites to internal dashboards.",
+      "Most business websites are brochures. They describe the business but don't do any of the work. We build the other kind: web applications and platforms that are part of how your business actually runs, from customer-facing sites to internal dashboards.",
     businessProblems: [
       "Your website hasn't been touched since it launched, and every change means calling a developer.",
-      "You need a real system — logins, data, workflows — not just a set of static pages.",
+      "You need a real system with logins, data, and workflows, not just a set of static pages.",
       'Your current site was built on a template that never quite fit the business.'
     ],
     capabilities: [
@@ -40,7 +40,7 @@ export const solutionDetails: SolutionDetail[] = [
     summary: "Native and cross-platform apps that put your operations in your team's pocket.",
     icon: 'smartphone',
     overview:
-      'When your team or your customers need access on the move, a website is the wrong tool. We build mobile apps — for staff running field operations, or customers who expect to reach you from their phone first.',
+      'When your team or your customers need access on the move, a website is the wrong tool. We build mobile apps for staff running field operations, or customers who expect to reach you from their phone first.',
     businessProblems: [
       "Your team works in the field, but your systems assume they're at a desk.",
       "Customers expect a mobile app, and a mobile-responsive site isn't quite the same thing.",
@@ -63,7 +63,7 @@ export const solutionDetails: SolutionDetail[] = [
     summary: 'Bespoke internal tools that replace spreadsheets and manual processes with structured software.',
     icon: 'layers',
     overview:
-      "Most operational bottlenecks aren't a people problem — they're a missing-system problem. We build the internal tools that replace spreadsheets, WhatsApp threads, and tribal knowledge with something structured and reliable.",
+      "Most operational bottlenecks aren't a people problem. They're a missing-system problem. We build the internal tools that replace spreadsheets, WhatsApp threads, and tribal knowledge with something structured and reliable.",
     businessProblems: [
       'The business runs on spreadsheets that only one person really understands.',
       "Processes that worked at five people don't work at twenty.",
@@ -86,14 +86,14 @@ export const solutionDetails: SolutionDetail[] = [
     summary: 'AI-powered automation and intelligent workflows, built into the systems you already run on.',
     icon: 'sparkles',
     overview:
-      "AI is a capability we build into real systems, not a label we put on a pitch deck. Where structuring, summarizing, or classifying information is slowing your team down, we build it into your existing workflow — the same discipline behind Nxtflo, our own internal AI-powered delivery system.",
+      "AI is a capability we build into real systems, not a label we put on a pitch deck. Where structuring, summarizing, or classifying information is slowing your team down, we build it into your existing workflow. It's the same discipline behind Nxtflo, our own internal AI-powered delivery system.",
     businessProblems: [
       'Your team spends hours manually structuring information that AI could handle in minutes.',
       "You're not sure where AI actually applies to your business versus where it's just noise.",
-      'Existing AI tools are generic — they don\'t plug into how your business actually runs.'
+      "Existing AI tools are generic. They don't plug into how your business actually runs."
     ],
     capabilities: [
-      { title: 'AI-assisted workflows', description: 'Structuring raw input — briefs, notes, messages — into usable data.' },
+      { title: 'AI-assisted workflows', description: 'Structuring raw input like briefs, notes, and messages into usable data.' },
       { title: 'Automation pipelines', description: 'Connecting AI steps into the systems you already use.' },
       { title: 'Structured data extraction', description: 'Turning unstructured text into fields your software can use.' },
       { title: 'Claude-powered internal tools', description: 'Purpose-built AI features, not a chatbot bolted onto a page.' }
@@ -109,10 +109,10 @@ export const solutionDetails: SolutionDetail[] = [
     summary: 'Networking, CCTV, and infrastructure work that keeps the physical and digital sides of your business connected.',
     icon: 'cloud',
     overview:
-      "Nxtedge Studio isn't only software — we handle the physical infrastructure underneath it too. Networking, CCTV, and cloud hosting, planned as one system instead of three separate vendors who don't talk to each other.",
+      "Nxtedge Studio isn't only software. We handle the physical infrastructure underneath it too. Networking, CCTV, and cloud hosting, planned as one system instead of three separate vendors who don't talk to each other.",
     businessProblems: [
       "Your physical locations and your digital systems weren't planned together.",
-      'You have no real visibility into your sites — no structured CCTV or monitoring.',
+      'You have no real visibility into your sites, no structured CCTV or monitoring.',
       "Infrastructure was set up to work today, not to scale to a second or third location."
     ],
     capabilities: [

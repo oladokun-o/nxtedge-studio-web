@@ -57,7 +57,7 @@ export const primaryNav: NavItem[] = [
   {
     label: "Solutions",
     href: "/solutions",
-    description: "Design, build and scale — from one team.",
+    description: "Design, build and scale, from one team.",
     children: solutionDetails.map((s) => ({
       label: s.title,
       description: s.summary,
@@ -85,7 +85,7 @@ export const primaryNav: NavItem[] = [
       eyebrow: "In Development",
       title: "Nxtflo",
       description:
-        "The operating system for client delivery — built in-house first.",
+        "The operating system for client delivery, built in-house first.",
       href: "/products/nxtflo",
       label: "Learn about Nxtflo",
     },
@@ -130,7 +130,7 @@ export const primaryNav: NavItem[] = [
   {
     label: "Case Studies",
     href: "/work",
-    description: "Systems we've delivered — real problems, real builds.",
+    description: "Systems we've delivered: real problems, real builds.",
     children: caseStudyDetails.map((c) => ({
       label: c.title,
       description: c.industry,
@@ -169,7 +169,7 @@ export const primaryNav: NavItem[] = [
       eyebrow: "Insights",
       title: "Written from delivery, not a content calendar",
       description:
-        "Nothing published yet — see what we're planning to write about.",
+        "Nothing published yet. See what we're planning to write about.",
       href: "/insights",
       label: "Visit Insights",
     },

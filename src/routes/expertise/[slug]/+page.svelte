@@ -17,7 +17,7 @@
   let relatedSolutions = $derived(solutionDetails.filter((s) => expertise.relatedSolutionSlugs.includes(s.slug)));
 </script>
 
-<SEO title="{expertise.title} — Nxtedge Studio" description={expertise.summary} />
+<SEO title="{expertise.title} | Nxtedge Studio" description={expertise.summary} />
 
 <PageHeader eyebrow="Expertise" title={expertise.title} description={expertise.summary}>
   {#snippet breadcrumbs()}
@@ -49,6 +49,6 @@
 <CTA
   eyebrow="Get Started"
   title="Need this kind of depth?"
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

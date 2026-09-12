@@ -9,14 +9,14 @@
 </script>
 
 <SEO
-  title="Solutions — Nxtedge Studio"
-  description="Five core offerings — web development, mobile applications, business systems, AI solutions, and cloud & infrastructure — one technology studio."
+  title="Solutions | Nxtedge Studio"
+  description="Five core offerings (web development, mobile applications, business systems, AI solutions, and cloud & infrastructure), one technology studio."
 />
 
 <PageHeader
   eyebrow="Solutions"
   title="What we build"
-  description="Five core offerings, one team — from a first product to the systems that run your business."
+  description="Five core offerings, one team, from a first product to the systems that run your business."
 />
 
 <Section bg="background">
@@ -28,6 +28,6 @@
 <CTA
   eyebrow="Get Started"
   title="Not sure which solution fits?"
-  description="Tell us what you're trying to solve — we'll help you figure out the right starting point."
+  description="Tell us what you're trying to solve. We'll help you figure out the right starting point."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

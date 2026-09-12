@@ -20,7 +20,7 @@
   <div class="flex flex-col justify-center rounded-lg border border-dashed border-border p-6">
     <p class="font-mono text-xs uppercase tracking-wide text-muted">More products coming soon</p>
     <p class="mt-2 text-sm text-muted">
-      Nxtflo is the first of an ongoing product line — future products will appear here as they ship.
+      Nxtflo is the first of an ongoing product line. Future products will appear here as they ship.
     </p>
   </div>
 </Grid>

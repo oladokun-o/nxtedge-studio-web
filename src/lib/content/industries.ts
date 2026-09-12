@@ -21,7 +21,7 @@ export const industryDetails: IndustryDetail[] = [
       'Growth outpaces the manual processes the business started with.'
     ],
     howWeSolve:
-      'We build sales and distribution platforms that give owners and coordinators live visibility into orders, inventory, and performance — replacing spreadsheets and phone calls with one system the whole team works from.',
+      'We build sales and distribution platforms that give owners and coordinators live visibility into orders, inventory, and performance, replacing spreadsheets and phone calls with one system the whole team works from.',
     relatedSolutionSlugs: ['web-development', 'business-systems'],
     relatedCaseStudySlugs: ['sales-distribution-tracking-platform']
   },
@@ -36,7 +36,7 @@ export const industryDetails: IndustryDetail[] = [
       'Legacy web presence does not reflect a modern, credible financial services business.'
     ],
     howWeSolve:
-      'We build loan documentation, approval, and microcredit systems with structured workflows and real-time notifications — plus modern public-facing sites for lending and funds businesses — replacing paper trails with auditable digital process.',
+      'We build loan documentation, approval, and microcredit systems with structured workflows and real-time notifications, plus modern public-facing sites for lending and funds businesses, replacing paper trails with auditable digital process.',
     relatedSolutionSlugs: ['mobile-applications', 'business-systems', 'ai-solutions'],
     relatedCaseStudySlugs: ['microcredit-loan-coordination-app', 'corporate-website-rebuild', 'loan-documentation-approval-system']
   },
@@ -66,7 +66,7 @@ export const industryDetails: IndustryDetail[] = [
       'Infrastructure decisions made early need to actually scale, not get rebuilt from scratch.'
     ],
     howWeSolve:
-      'We build products end to end — application, AI-assisted features where they genuinely help, and the cloud infrastructure underneath — with the same discipline behind Nxtflo, the AI-powered delivery system we build for ourselves.',
+      'We build products end to end: application, AI-assisted features where they genuinely help, and the cloud infrastructure underneath, with the same discipline behind Nxtflo, the AI-powered delivery system we build for ourselves.',
     relatedSolutionSlugs: ['ai-solutions', 'cloud-infrastructure'],
     relatedCaseStudySlugs: []
   }

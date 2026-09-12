@@ -11,14 +11,14 @@
 </script>
 
 <SEO
-  title="Expertise — Nxtedge Studio"
-  description="Cross-cutting technical specializations Nxtedge Studio brings to client work — MVP development, data migration, AI-assisted workflows, and more."
+  title="Expertise | Nxtedge Studio"
+  description="Cross-cutting technical specializations Nxtedge Studio brings to client work: MVP development, data migration, AI-assisted workflows, and more."
 />
 
 <PageHeader
   eyebrow="Expertise"
   title="Where we go deep"
-  description="Narrower specializations that cut across our five solutions — the specific technical depth behind the work."
+  description="Narrower specializations that cut across our five solutions, the specific technical depth behind the work."
 />
 
 <Section bg="background">
@@ -40,6 +40,6 @@
 <CTA
   eyebrow="Get Started"
   title="Need this kind of depth?"
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

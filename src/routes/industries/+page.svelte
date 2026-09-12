@@ -13,14 +13,14 @@
 </script>
 
 <SEO
-  title="Industries — Nxtedge Studio"
-  description="The industries Nxtedge Studio understands — Food & Beverage, Financial Services, Professional Services, and Technology & Startups."
+  title="Industries | Nxtedge Studio"
+  description="The industries Nxtedge Studio understands: Food & Beverage, Financial Services, Professional Services, and Technology & Startups."
 />
 
 <PageHeader
   eyebrow="Industries"
   title="Industries we understand"
-  description="Domain-specific credibility, built from real work — not a speculative list of every vertical we'd like to serve."
+  description="Domain-specific credibility, built from real work, not a speculative list of every vertical we'd like to serve."
 />
 
 <Section bg="background">
@@ -42,6 +42,6 @@
 <CTA
   eyebrow="Get Started"
   title="Don't see your industry?"
-  description="We build for the problem, not just the label — tell us what you're working with."
+  description="We build for the problem, not just the label. Tell us what you're working with."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

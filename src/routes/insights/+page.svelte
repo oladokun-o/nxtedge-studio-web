@@ -8,14 +8,14 @@
 </script>
 
 <SEO
-  title="Insights — Nxtedge Studio"
-  description="Notes on engineering, AI, and running a technology studio — coming soon from Nxtedge Studio."
+  title="Insights | Nxtedge Studio"
+  description="Notes on engineering, AI, and running a technology studio, coming soon from Nxtedge Studio."
 />
 
 <PageHeader
   eyebrow="Insights"
   title="What we're learning and sharing"
-  description="Written from delivery, not a content calendar. Nothing published yet — here's what's coming."
+  description="Written from delivery, not a content calendar. Nothing published yet. Here's what's coming."
 />
 
 <Section bg="background">

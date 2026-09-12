@@ -140,6 +140,10 @@ export interface FeatureItem {
   title: string;
   description: string;
   icon: string;
+  // Optional generated illustration (gif/png/svg path under /static), per the
+  // reference's abstract dot-pattern card illustrations. Falls back to the
+  // icon badge in FeatureGrid.svelte when not set.
+  image?: string;
 }
 
 export interface Stat {

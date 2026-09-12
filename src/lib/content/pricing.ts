@@ -17,7 +17,7 @@ import type { ProductPricing } from '$lib/types/content';
 export const servicesPricingNote = {
   title: 'Solutions & Services',
   description:
-    "Every client project is scoped individually — a corporate website, a mobile app, and a full business system are not the same job, and we don't pretend otherwise with a one-size price list. Tell us what you're building and we'll come back with a clear, itemized proposal before any work starts.",
+    "Every client project is scoped individually. A corporate website, a mobile app, and a full business system are not the same job, and we don't pretend otherwise with a one-size price list. Tell us what you're building and we'll come back with a clear, itemized proposal before any work starts.",
   cta: { label: 'Start a Project', href: '/#contact' }
 };
 
@@ -26,7 +26,7 @@ export const productPricing: ProductPricing[] = [
     productSlug: 'nxtflo',
     productTitle: 'Nxtflo',
     model: 'subscription',
-    note: 'Working pricing hypothesis — not final, subject to change as Nxtflo is validated with early users.',
+    note: 'Working pricing hypothesis, not final, subject to change as Nxtflo is validated with early users.',
     tiers: [
       {
         name: 'Free',
@@ -61,7 +61,7 @@ export const productPricing: ProductPricing[] = [
     productSlug: 'nxtpay',
     productTitle: 'Nxtpay',
     model: 'implementation',
-    note: 'Working commercial model — not final, subject to the first paying customer functioning as a design partner.',
+    note: 'Working commercial model, not final, subject to the first paying customer functioning as a design partner.',
     tiers: [
       {
         name: 'Implementation',

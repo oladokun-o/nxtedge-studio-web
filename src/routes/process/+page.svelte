@@ -9,8 +9,8 @@
 </script>
 
 <SEO
-  title="Process — Nxtedge Studio"
-  description="How Nxtedge Studio works — from a raw idea to a delivered, working system."
+  title="Process | Nxtedge Studio"
+  description="How Nxtedge Studio works, from a raw idea to a delivered, working system."
 />
 
 <PageHeader
@@ -28,6 +28,6 @@
 <CTA
   eyebrow="Get Started"
   title="Have a raw idea? That's enough to start."
-  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  description="Tell us what you're trying to solve. We'll help you turn it into a structured, working system."
   primaryCta={{ label: 'Start a Project', href: '/#contact' }}
 />

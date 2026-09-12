@@ -13,14 +13,14 @@ export const caseStudyDetails: CaseStudyDetail[] = [
     title: 'Sales & Distribution Tracking Platform',
     slug: 'sales-distribution-tracking-platform',
     industry: 'Food & Beverage',
-    summary: 'A sales tracking system built for a growing beverage distribution business — real-time visibility into orders, inventory, and performance.',
+    summary: 'A sales tracking system built for a growing beverage distribution business, with real-time visibility into orders, inventory, and performance.',
     tags: ['Web App', 'Business Systems'],
     icon: 'layers',
     relatedSolutionSlugs: ['web-development', 'business-systems'],
     businessChallenge:
-      'The business was running sales, orders, and inventory across spreadsheets and phone calls between reps and coordinators — no shared source of truth, no real-time visibility into what was actually selling or what stock was left.',
+      'The business was running sales, orders, and inventory across spreadsheets and phone calls between reps and coordinators, with no shared source of truth and no real-time visibility into what was actually selling or what stock was left.',
     solutionNarrative:
-      'We built a web-based sales tracking platform that gives coordinators and management live visibility into orders, inventory levels, and rep performance — replacing the spreadsheet-and-phone-call workflow with one system everyone works from.',
+      'We built a web-based sales tracking platform that gives coordinators and management live visibility into orders, inventory levels, and rep performance, replacing the spreadsheet-and-phone-call workflow with one system everyone works from.',
     technologies: [{ name: 'SvelteKit' }, { name: 'PostgreSQL' }, { name: 'Node.js' }]
   },
   {

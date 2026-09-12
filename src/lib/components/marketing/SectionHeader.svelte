@@ -21,7 +21,7 @@
 >
   <div class="max-w-2xl">
     {#if eyebrow}
-      <span class="font-mono text-xs uppercase tracking-wide text-secondary">{eyebrow}</span>
+      <span class="text-sm text-secondary bg-accent rounded-full px-2 py-0.5">{eyebrow}</span>
     {/if}
     <h2 class="mt-3 font-display text-h2 font-bold text-foreground">{title}</h2>
     {#if description}
