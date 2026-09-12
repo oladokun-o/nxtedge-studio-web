@@ -1,18 +1,44 @@
 <script lang="ts">
-  import SEO from '$lib/components/SEO.svelte';
-  import Navbar from '$lib/components/Navbar.svelte';
-  import Hero from '$lib/components/Hero.svelte';
-  import About from '$lib/components/About.svelte';
-  import Portfolio from '$lib/components/Portfolio.svelte';
-  import Services from '$lib/components/Services.svelte';
-  import Testimonials from '$lib/components/Testimonials.svelte';
-  import Contact from '$lib/components/Contact.svelte';
+  import SEO from '$lib/components/shared/SEO.svelte';
+  import Hero from '$lib/components/hero/Hero.svelte';
+  import Container from '$lib/components/layout/Container.svelte';
+  import Section from '$lib/components/layout/Section.svelte';
+  import SectionHeader from '$lib/components/marketing/SectionHeader.svelte';
+  import FeatureGrid from '$lib/components/marketing/FeatureGrid.svelte';
+  import BentoGrid from '$lib/components/marketing/BentoGrid.svelte';
+  import Timeline from '$lib/components/marketing/Timeline.svelte';
+  import TechStrip from '$lib/components/marketing/TechStrip.svelte';
+  import CTA from '$lib/components/marketing/CTA.svelte';
+  import SolutionCard from '$lib/components/solutions/SolutionCard.svelte';
+  import ProductHighlight from '$lib/components/products/ProductHighlight.svelte';
+  import CaseStudyGrid from '$lib/components/case-studies/CaseStudyGrid.svelte';
+  import Card from '$lib/components/ui/Card.svelte';
+  import Icon from '$lib/components/ui/Icon.svelte';
+  import Badge from '$lib/components/ui/Badge.svelte';
+
+  import {
+    solutions,
+    flagshipProduct,
+    caseStudies,
+    industries,
+    processSteps,
+    insightCategories,
+    whyNxtedge,
+    heroStats,
+    builtWith
+  } from '$lib/content/homepage';
 
   import type { PageData } from './$types';
   let { data }: { data: PageData } = $props();
 
-  const defaultTitle = 'Nxtedge Studio — Digital Solutions Agency';
-  const defaultDescription = 'Full-service digital solutions agency. Web & app development, networking, and digital transformation.';
+  const defaultTitle = 'Nxtedge Studio — Technology Company for Digital Products & Business Systems';
+  const defaultDescription =
+    'Nxtedge Studio designs, engineers, and scales digital products, business systems, and AI-powered solutions — including Nxtflo, our AI-powered delivery operating system.';
+
+  // First item wide, rest even — see component-architecture.md's BentoGrid entry.
+  const solutionSpans = ['md:col-span-4', 'md:col-span-2', 'md:col-span-2', 'md:col-span-2', 'md:col-span-2'];
+
+  const industryBadgeColors = ['bg-primary text-white', 'bg-accent text-foreground', 'bg-secondary text-white', 'bg-primary text-white'];
 </script>
 
 <SEO
@@ -22,76 +48,118 @@
   ogImage={data.settings?.ogImage}
 />
 
-<!-- ==================== Start Loading ==================== -->
-<div class="loader-wrap">
-  <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-    <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-  </svg>
-  <div class="loader-wrap-heading">
-    <div class="load-text">
-      <span>L</span>
-      <span>o</span>
-      <span>a</span>
-      <span>d</span>
-      <span>i</span>
-      <span>n</span>
-      <span>g</span>
-    </div>
-  </div>
-</div>
-<!-- ==================== End Loading ==================== -->
+<Hero settings={data.settings} stats={heroStats} />
 
-<div class="cursor"></div>
-
-<!-- ==================== Start progress-scroll-button ==================== -->
-<div class="progress-wrap cursor-pointer">
-  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-  </svg>
-</div>
-<!-- ==================== End progress-scroll-button ==================== -->
-
-<!-- Navbar (includes hamenu off-canvas) -->
-<Navbar settings={data.settings} />
-
-<div id="smooth-wrapper">
-  <div id="smooth-content">
-    <main>
-
-      <!-- Hero -->
-      <Hero settings={data.settings} />
-
-      <!-- ==================== Start box light ==================== -->
-      <section class="box-light section-padding pt-0">
-
-        <!-- About / Intro -->
-        <About settings={data.settings} />
-
-        <!-- Portfolio / Works -->
-        <Portfolio projects={data.projects ?? []} />
-
-      </section>
-      <!-- ==================== End box light ==================== -->
-
-      <!-- Services -->
-      <Services services={data.services ?? []} />
-
-      <!-- ==================== Start dark box ==================== -->
-      <section class="box-dark">
-        <div class="container box">
-          <div class="layers"></div>
-
-          <!-- Testimonials -->
-          <Testimonials />
-
+<!-- Featured Solutions -->
+<Section id="solutions" bg="tint">
+  <Container>
+    <SectionHeader
+      eyebrow="Solutions"
+      title="What we build"
+      description="Five core offerings, one team — from a first product to the systems that run your business."
+    />
+    <BentoGrid class="mt-14">
+      {#each solutions as solution, i (solution.slug)}
+        <div class={solutionSpans[i] ?? 'md:col-span-2'}>
+          <SolutionCard {solution} class="h-full" />
         </div>
-      </section>
-      <!-- ==================== End dark box ==================== -->
+      {/each}
+    </BentoGrid>
+  </Container>
+</Section>
 
-    </main>
+<!-- Featured Products -->
+<Section bg="background">
+  <Container>
+    <SectionHeader
+      eyebrow="Products"
+      title="What we're building for ourselves"
+      description="Proprietary software, built in-house first, then made available beyond Nxtedge Studio."
+    />
+    <div class="mt-14">
+      <ProductHighlight product={flagshipProduct} />
+    </div>
+  </Container>
+</Section>
 
-    <!-- Footer / Contact -->
-    <Contact settings={data.settings} />
+<!-- Why Nxtedge -->
+<Section bg="surface">
+  <Container>
+    <SectionHeader eyebrow="Why Nxtedge" title="Why businesses trust us with real systems" />
+    <div class="mt-14">
+      <FeatureGrid items={whyNxtedge} columns={4} />
+    </div>
+  </Container>
+</Section>
 
-  </div>
-</div>
+<!-- Case Studies -->
+<Section id="work" bg="background">
+  <Container>
+    <SectionHeader
+      eyebrow="Work"
+      title="Systems we've delivered"
+      description="A sample of what we've built for clients — full names and results go live as each client signs off on public case studies."
+    />
+    <div class="mt-14">
+      <CaseStudyGrid {caseStudies} />
+    </div>
+  </Container>
+</Section>
+
+<!-- Industries -->
+<Section id="industries" bg="tint">
+  <Container>
+    <SectionHeader eyebrow="Industries" title="Industries we understand" />
+    <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {#each industries as industry, i (industry.title)}
+        <Card variant="elevated">
+          <span class="inline-flex size-11 items-center justify-center rounded-md {industryBadgeColors[i % industryBadgeColors.length]}">
+            <Icon name={industry.icon} class="size-5" />
+          </span>
+          <h3 class="mt-5 text-h4 font-bold text-foreground">{industry.title}</h3>
+          <p class="mt-2 text-sm text-muted">{industry.description}</p>
+        </Card>
+      {/each}
+    </div>
+  </Container>
+</Section>
+
+<!-- Process -->
+<Section bg="background">
+  <Container>
+    <SectionHeader eyebrow="Process" title="How we work" align="center" />
+    <div class="mt-14">
+      <Timeline steps={processSteps} />
+    </div>
+  </Container>
+</Section>
+
+<!-- Insights -->
+<Section id="insights" bg="surface">
+  <Container>
+    <SectionHeader
+      eyebrow="Insights"
+      title="What we're learning and sharing"
+      description="Our content hub is in progress — here's what's coming."
+    />
+    <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {#each insightCategories as insight (insight.category)}
+        <Card variant="flush" class="border border-dashed border-border">
+          <Badge tone="neutral">{insight.category}</Badge>
+          <p class="mt-4 text-body text-muted">{insight.description}</p>
+        </Card>
+      {/each}
+    </div>
+  </Container>
+</Section>
+
+<!-- CTA -->
+<CTA
+  eyebrow="Get Started"
+  title="Have a raw idea? That's enough to start."
+  description="Tell us what you're trying to solve — we'll help you turn it into a structured, working system."
+  primaryCta={{ label: 'Start a Project', href: `mailto:${data.settings?.email ?? 'hello@nxtedgestudio.com'}` }}
+  secondaryCta={data.settings?.calendarLink
+    ? { label: 'Book a Discovery Call', href: data.settings.calendarLink }
+    : undefined}
+/>
