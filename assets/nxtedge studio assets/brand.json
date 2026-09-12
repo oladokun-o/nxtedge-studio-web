@@ -1,0 +1,37 @@
+{
+  "name": "NxtEdge Studio",
+  "colors": {
+    "electricBlue": "#04045E",
+    "lemonade": "#B9FA3C",
+    "charcoal": "#11121A",
+    "beige": "#FFF9F9"
+  },
+  "typography": {
+    "display": "Electrolize",
+    "body": "Manrope"
+  },
+  "assets": {
+    "lockups": [
+      "nxtedge-lockup-white.png",
+      "nxtedge-lockup-blue-lime.png",
+      "nxtedge-lockup-lime.png",
+      "nxtedge-lockup-charcoal.png"
+    ],
+    "marks": [
+      "nxtedge-mark-white.png",
+      "nxtedge-mark-blue-lime.png",
+      "nxtedge-mark-lime.png",
+      "nxtedge-mark-charcoal.png"
+    ],
+    "wordmarks": [
+      "nxtedge-wordmark-white.png",
+      "nxtedge-wordmark-blue.png",
+      "nxtedge-wordmark-lime.png",
+      "nxtedge-wordmark-charcoal.png"
+    ],
+    "sourceImages": [
+      "embedded_1.jpeg",
+      "embedded_2.jpeg"
+    ]
+  }
+}
